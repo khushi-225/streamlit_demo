@@ -7,8 +7,7 @@ import torchvision.models as models
 import os
 import numpy as np
 import gdown
-
-url = "https://drive.google.com/file/d/1DEtyePl-vgjj-qvZ_xeRz0jXipqoX35W/view?usp=sharing"
+url = "https://drive.google.com/uc?id=1DEtyePl-vgjj-qvZ_xeRz0jXipqoX35W"
 output = "plant_disease_resnet50.pth"
 gdown.download(url, output, quiet=False)
 
