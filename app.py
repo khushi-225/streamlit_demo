@@ -6,6 +6,11 @@ from PIL import Image
 import torchvision.models as models
 import os
 import numpy as np
+import gdown
+
+url = "https://drive.google.com/file/d/1DEtyePl-vgjj-qvZ_xeRz0jXipqoX35W/view?usp=sharing"
+output = "plant_disease_resnet50.pth"
+gdown.download(url, output, quiet=False)
 
 # Load class labels
 class_labels = ['Pepper__bell___Bacterial_spot', 'Pepper__bell___healthy',
